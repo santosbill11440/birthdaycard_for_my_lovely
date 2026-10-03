@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untuk Nabiila 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bg"></div>
+<canvas id="cf"></canvas>
+<audio id="bgm" loop></audio>
+<button id="musicBtn" hidden aria-label="Musik">♪</button>
+
+<!-- 1. KUNCI -->
+<section id="lock" class="screen on">
+  <figure class="pol">
+    <div class="ph" id="lockPhoto"></div>
+    <figcaption class="cap hand" id="lockCap"></figcaption>
+  </figure>
+  <div class="pad">
+    <p class="hand padTitle">Masukkan kode sandi</p>
+    <div class="dots" id="dots"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="keys" id="keys"></div>
+    <p id="hint"></p>
+  </div>
+</section>
+
+<!-- 2. INTRO -->
+<section id="intro" class="screen">
+  <div class="center">
+    <div class="beat">❤</div>
+    <h1 class="hand">Sebentar ya, <span id="introName"></span>...</h1>
+    <p>ada yang sudah menunggumu sejak lama</p>
+  </div>
+</section>
+
+<!-- 3. AMPLOP -->
+<section id="env" class="screen">
+  <div class="center">
+    <p class="hand big">Ada surat untukmu</p>
+    <div class="envwrap" id="envwrap">
+      <div class="env-back"></div>
+      <div class="card"><span class="hand">Selamat ulang tahun,</span><b class="hand" id="cardName"></b></div>
+      <div class="env-front"></div>
+      <div class="flap"></div>
+      <div class="seal">❤</div>
+    </div>
+    <p class="tap" id="tap">ketuk segelnya</p>
+    <button class="btn" id="toLetter" hidden>Baca suratnya</button>
+  </div>
+</section>
+
+<!-- 4. SURAT -->
+<section id="letter" class="screen">
+  <div class="col">
+    <article class="paper hand">
+      <h2 id="lTitle"></h2>
+      <p id="lBody"></p>
+      <p class="sign" id="lSign"></p>
+    </article>
+    <div class="gal" id="gal"></div>
+    <button class="btn" id="toWish" hidden>Satu hal lagi ➜</button>
+  </div>
+</section>
+
+<!-- 5. MAKE A WISH -->
+<section id="wish" class="screen">
+  <div class="center">
+    <h2 class="hand big gold" id="wishTitle">✨ Make a Wish ✨</h2>
+    <div class="cake" id="cake">
+      <div class="plate"></div>
+      <div class="tier t1"></div>
+      <div class="tier t2"></div>
+      <div class="candle" style="left:68px"><i class="flame"></i></div>
+      <div class="candle" style="left:96px"><i class="flame"></i></div>
+      <div class="candle" style="left:124px"><i class="flame"></i></div>
+    </div>
+    <button class="btn" id="blow">Tiup lilinnya 🕯️</button>
+    <p class="tap" id="blowHint">Tiup ke mikrofon, atau ketuk kuenya</p>
+    <p class="hand big" id="final"></p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
